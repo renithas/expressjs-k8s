@@ -11,7 +11,8 @@ metadata:
   namespace: openfaas-fn
 spec:
   rules:
-  - host: express.example.com
+ # - host: express.example.com
+ - host: express.{{.Values.domain}}
     http:
       paths:
       - backend:
