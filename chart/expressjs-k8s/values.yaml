@@ -41,6 +41,7 @@ ingress:
   hosts:
     - host: expressjs.local
       paths: ["/"]
+      domain: example.com
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
